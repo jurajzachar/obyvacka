@@ -1,0 +1,8 @@
+@()(implicit lang: Lang)
+@import play.api.Play.current
+<footer class="footer">
+  lang = @lang.code,
+  user = @current.configuration.getString("environment.user"),
+  visitors = @controllers.Application.visitors,
+  date = @(new java.util.Date().format("yyyy-MM-dd HH:mm"))
+</footer>

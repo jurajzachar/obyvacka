@@ -1,0 +1,15 @@
+@(review: model.Review)
+
+@import tags.displayLongReview
+
+@main(review.title, "/index") {
+
+<div class="row">
+    <div class="col-lg-offset-2 col-lg-8">
+        @displayLongReview(review)
+            <br>
+    <a href="../../recenzie/">... späť k recenziám.</a>
+    </div>
+
+</div>
+}
