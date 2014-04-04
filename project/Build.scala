@@ -21,7 +21,7 @@ object ApplicationBuild extends Build {
     scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature"),
     resolvers ++= Seq(
       "twitter.com" at "http://maven.twttr.com/",
-      "sonatype" at "http://oss.sonatype.org/content/repositories/releases",
-      "sonatype snapshots" at "http://oss.sonatype.org/content/repositories/snapshots"))
+      "sonatype" at "http://oss.sonatype.org/content/repositories/releases")
+      )
 
 }
