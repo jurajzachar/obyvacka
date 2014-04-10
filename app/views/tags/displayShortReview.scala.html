@@ -2,11 +2,13 @@
 
 @import common.Templating._
 
+<div class="home_header" style="font-size: 25px;">
 @if(!review.slug.isEmpty && link) {
-    <h1><a href="@controllers.routes.Application.display(review.slug.get)">@review.title</a></h1>
+    <h3><a href="@controllers.routes.Application.display(review.slug.get)">@review.title</a></h3>
 } else {
     <h1>@review.title</h1>
 }
+</div>
 
 <div class="review-data">
 	<img src="@review.picture_url"/>

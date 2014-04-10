@@ -60,7 +60,9 @@ case class ReviewService(parser: Parser) {
         Error.unsafeOption(conf.getString("description")) map parser.parse,
         Error.unsafeOption(conf.getString("description")),
         slug,
-        Error.unsafeOption(conf.getString("id")))
+        Error.unsafeOption(conf.getString("id")),
+        conf.getString("rating").toInt
+        )
     }
 
 }

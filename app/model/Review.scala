@@ -11,7 +11,8 @@ import common.StringHelper
       description: Option[String] = None, 
       rawDescription: Option[String] = None, 
       slug: Option[String] = None, 
-      id: Option[String] = None) extends Ordered[Date] {
+      id: Option[String] = None,
+      rating: Int) extends Ordered[Date] {
 
   def compare(that: Date): Int = {
     createdAt.compareTo(that)
@@ -24,5 +25,8 @@ import common.StringHelper
       case None => StringHelper.slugify(title)
     }
   }
-
+    
+  def ratingAsPercent: String = {
+    rating + " %"
+  }
 }
