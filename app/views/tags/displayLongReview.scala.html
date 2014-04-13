@@ -5,11 +5,15 @@
 @if(!review.slug.isEmpty && link) {
     <h1><a href="@controllers.routes.Application.display(review.slug.get)">@review.title</a></h1>
 } else {
-    <h1>@review.title</h1>
+    <h2>@review.title</h2>
 }
-<div class="review-data">
+<div class="review-data" style="margin-top: 20px;">
 	<img src="@review.picture_url"/>
-	Pridané <span class="black">@formatDate(review.createdAt)</span> od <span class="black">Janko</span>
+	<p>
+		<span class="tag1">Pridané @formatDate(review.createdAt) od Janko</span>
+		<br>
+		<span class="tag1">Moje hodnotenie: @Html(review.ratingAsPercent)</span>
+	</p>
 </div>
 
 @Html(review.description.getOrElse(" "))

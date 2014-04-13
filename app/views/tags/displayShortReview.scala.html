@@ -2,15 +2,17 @@
 
 @import common.Templating._
 
+<div style="font-size: 20px;">
 @if(!review.slug.isEmpty && link) {
-    <h1><a href="@controllers.routes.Application.display(review.slug.get)">@review.title</a></h1>
+    <h2><a href="@controllers.routes.Application.display(review.slug.get)">@review.title</a></h2>
 } else {
     <h1>@review.title</h1>
 }
+</div>
 
 <div class="review-data">
 	<img src="@review.picture_url"/>
-	Pridané <span class="black">@formatDate(review.createdAt)</span> od <span class="black">Janko</span>
+	
 </div>
 
 @Html(review.description.getOrElse(" "))
