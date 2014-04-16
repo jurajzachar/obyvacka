@@ -5,8 +5,9 @@ import play.api.Configuration
 import model.service.ReviewService
 
 class AppEnv(configuration: Configuration) {
-
+	
   def dataReviewDirectory: File = new File("data/reviews/")
+  def metaFile: File = new File("data/obyvacka.meta")
   def parser: PegDownParser = PegDownParser()
   def reviewService: ReviewService = new ReviewService(parser)
 
