@@ -66,7 +66,11 @@ background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* 
 background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
 background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-	background-color: white; 
+
+}
+
+.navbar-default:hover, .navbar-default:focus {
+	background-color: #03132A;
 }
 
 .inner_body {
@@ -78,18 +82,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 /* 	color: #041F54; */
 	color: black;
 	padding: 10px;
-	opacity: 0.8;
+	opacity: 0.85;
 }
 
 .outer_body {
-	background-color: black;
+	background-color: #03132A;
 	color: white;
 	padding: 20px;
 	opacity: 1;
 }
 
 .footer {
-	margin-left: 8.8%;
+	
 }
 
 .active_nav > a{
