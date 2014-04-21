@@ -8,8 +8,10 @@ html>body {
 /* 	padding-top: 50px; */
 	padding-bottom: 70px;
 	line-height: 29px;
-	background-image: url('./../images/body2.png'); 
+	background-image: url('./../images/couch.jpg'); 
 	background-size: 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
 	color: white;
 	
 }
@@ -23,8 +25,8 @@ html>body {
 }
 
 .review-data img {
-	max-width: 25%;
-	max-height: 25%;
+	max-width: 55%;
+	max-height: 55%;
 	float: left;
 	margin-right: 50px;
 }
@@ -70,30 +72,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 }
 
 .navbar-default:hover, .navbar-default:focus {
-	background-color: #03132A;
+	background-color: black;
 }
 
 .inner_body {
  	background-color: white; 
 	border-radius: 5px 10px 5px 10px / 10px 5px 10px 5px;
 	padding: 10px;
-	margin-top: 25px;
+	margin-top: 55px;
 	font-size: 16px;
 /* 	color: #041F54; */
 	color: black;
 	padding: 10px;
-	opacity: 0.85;
+	opacity: 0.80;
 }
 
 .outer_body {
-	background-color: #03132A;
+/* 	background-color: #03132A; */
+ 	background-color: black; 
 	color: white;
 	padding: 20px;
 	opacity: 1;
 }
 
 .footer {
-	
+	margin-bottom: 0%;
 }
 
 .active_nav > a{
@@ -104,4 +107,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 .lead {
 	font-size: 20px;
 	padding: 10px;
+}
+
+.review {
+ 	margin-left: 12%;	
+ 	margin-right: 12%;	
 }
