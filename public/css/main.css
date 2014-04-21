@@ -15,6 +15,11 @@ html>body {
 	color: white;
 	
 }
+
+p {
+	padding: 10px;
+}
+
 .courgette {
 	font-family: 'Courgette';
 }
@@ -71,9 +76,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 }
 
-.navbar-default:hover, .navbar-default:focus {
-	background-color: black;
-}
+/* .navbar-default:hover, .navbar-default:focus { */
+/* 	background-color: black; */
+/* } */
 
 .inner_body {
  	background-color: white; 
