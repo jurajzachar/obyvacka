@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Nosifer|Poiret+One|Text+Me+One&subset=latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Sonsie+One|Joti+One|Courgette&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Play&subset=latin,latin-ext);
 
 html>body {
-	font-family: 'Poiret One';
+	font-family: 'Play';
 	font-style: normal;
 	font-weight: 400;
 /* 	padding-top: 50px; */
@@ -89,7 +90,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 /* 	color: #041F54; */
 	color: black;
 	padding: 10px;
-	opacity: 0.80;
+	opacity: 0.85;
 }
 
 .outer_body {
