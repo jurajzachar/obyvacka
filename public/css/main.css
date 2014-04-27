@@ -13,7 +13,7 @@ html>body {
 	background-size: 100%;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	color: white;
+	color: black;
 	
 }
 
@@ -95,7 +95,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 .outer_body {
 /* 	background-color: #03132A; */
- 	background-color: black; 
+/*  	background-color: rgb(185,152,107);   */
+ 	background-color: black;  
 	color: white;
 	padding: 20px;
 	opacity: 1;
@@ -109,6 +110,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
  	color: #FEBF01 !important;
     text-decoration: underline;
 }
+
 
 .lead {
 	font-size: 20px;
