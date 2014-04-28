@@ -67,7 +67,7 @@ body h1,body .h1 {
 
 
 .navbar-default {
-	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
@@ -81,6 +81,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 /* 	background-color: black; */
 /* } */
 
+outer_body-default{
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
 .inner_body {
  	background-color: white; 
 	border-radius: 5px 10px 5px 10px / 10px 5px 10px 5px;
@@ -90,25 +100,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 /* 	color: #041F54; */
 	color: black;
 	padding: 10px;
-	opacity: 0.85;
+	opacity: 0.89;
 }
 
 .outer_body {
 /* 	background-color: #03132A; */
 /*  	background-color: rgb(185,152,107);   */
- 	background-color: black;  
+ 	background-color: rgb(120,107,98);  
 	color: white;
 	padding: 20px;
 	opacity: 1;
 }
 
+.outer_body_nav {
+	border-radius: 5px 10px 5px 10px / 10px 5px 10px 5px;
+	background-color: rgb(120,107,98);
+	color: white;
+	opacity: 0.85;
+	border-color: white;
+	border-width: 5px;
+}
+
 .footer {
-	margin-bottom: 0%;
+	margin-bottom: 1%;
 }
 
 .active_nav > a{
  	color: #FEBF01 !important;
     text-decoration: underline;
+    font-size: 30px;
 }
 
 
