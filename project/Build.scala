@@ -16,10 +16,12 @@ object ApplicationBuild extends Build {
     "com.twitter" % "util-core" % "1.12.4",
     "org.pegdown" % "pegdown" % "1.4.1",
     "eu.henkelmann" % "actuarius_2.10.0" % "0.2.6",
-    "org.postgresql" % "postgresql" % "9.3-1101-jdbc41")
+    "org.postgresql" % "postgresql" % "9.3-1101-jdbc41",
+    "org.squeryl" %% "squeryl" % "0.9.5-6"
+    )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
-    scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature"),
+    scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-encoding", "UTF-8"),
     resolvers ++= Seq(
       "twitter.com" at "http://maven.twttr.com/",
       "sonatype" at "http://oss.sonatype.org/content/repositories/releases"))
